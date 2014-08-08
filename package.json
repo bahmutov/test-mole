@@ -1,0 +1,46 @@
+{
+  "name": "test-mole",
+  "description": "Test inside javascript closures by sneaking a mole",
+  "version": "0.1.0",
+  "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/bahmutov/test-mole/issues"
+  },
+  "devDependencies": {
+    "check-types": "1.3.1",
+    "grunt": "0.4.5",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-deps-ok": "0.2.0",
+    "grunt-nice-package": "0.9.1",
+    "grunt-npm2bower-sync": "0.4.0",
+    "lazy-ass": "0.4.1",
+    "matchdep": "0.3.0",
+    "pre-git": "0.0.16",
+    "time-grunt": "0.4.0"
+  },
+  "engines": {
+    "node": "> 0.8"
+  },
+  "homepage": "https://github.com/bahmutov/test-mole",
+  "keywords": [
+    "unit",
+    "test",
+    "async",
+    "javascript",
+    "private",
+    "closures"
+  ],
+  "license": "MIT",
+  "main": "test-mole.js",
+  "pre-commit": [
+    "grunt",
+    "npm test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bahmutov/test-mole.git"
+  },
+  "scripts": {
+    "test": "grunt && node test/basic-spec.js"
+  }
+}
