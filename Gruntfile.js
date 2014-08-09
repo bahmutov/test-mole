@@ -23,11 +23,20 @@ module.exports = function (grunt) {
             'private', 'license', 'keywords', 'homepage'],
         }
       }
+    },
+
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec'
+        },
+        src: ['test/*.js']
+      }
     }
   });
 
   var plugins = module.require('matchdep').filterDev('grunt-*');
   plugins.forEach(grunt.loadNpmTasks);
 
-  grunt.registerTask('default', ['deps-ok', 'nice-package', 'sync', 'jshint']);
+  grunt.registerTask('default', ['deps-ok', 'nice-package', 'sync', 'jshint', 'mochaTest']);
 };

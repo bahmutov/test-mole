@@ -39,8 +39,7 @@ to the private code, but will do nothing in production mode.
 Example:
 
 ```js
-// include test-mole.js first
-// source.js
+// test/add.js
 var add = (function () {
   function isNumber(x) {
     return typeof x === 'number';
@@ -66,6 +65,12 @@ var add = (function () {
 ```
 
 I am using [lazy-ass](https://github.com/bahmutov/lazy-ass) assertions.
+
+    $ node add.js
+    5
+    $ mocha add.js
+    5
+    2 passing (2ms)
 
 When running in production, `testMole` will not find `describe` or `it` functions,
 so it will default its own methods to be `noop`. Your code will pay only for source code download

@@ -11,6 +11,7 @@
 
   root.testMole = {};
 
+  // console.log('is testing?', isTestingEnvironment);
   if (isTestingEnvironment) {
     root.testMole.describe = root.describe;
     root.testMole.it = root.it;
