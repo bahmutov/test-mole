@@ -2,6 +2,8 @@
 
 > Test inside javascript closures by sneaking a mole
 
+[![NPM][test-mole-icon] ][test-mole-url]
+
 [![Build status][test-mole-ci-image] ][test-mole-ci-url]
 [![dependencies][test-mole-dependencies-image] ][test-mole-dependencies-url]
 [![devdependencies][test-mole-devdependencies-image] ][test-mole-devdependencies-url]
