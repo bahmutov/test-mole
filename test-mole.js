@@ -9,7 +9,7 @@
       typeof root.it === 'function';
   }());
 
-  root.testMole = {};
+  root.tm = root.testMole = {};
 
   // console.log('is testing?', isTestingEnvironment);
   if (isTestingEnvironment) {

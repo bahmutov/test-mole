@@ -79,6 +79,18 @@ so it will default its own methods to be `noop`. Your code will pay only for sou
 and compilation once. When running with the unit test environment, the `testMole.it` will
 point at `window.it` provided by BDD framework.
 
+## Install
+
+Node: `npm install test-mole` then `require('test-mole')`
+
+Browser: `bower install test-mole` then `<script src="bower_components/test-mole/test-mole.js"></script>`
+
+Test mole attaches itself to the `window` or `global` under names `testMole` and `tm`.
+
+## API
+
+Test mole mimics BDD testing framework with the following methods: `describe`, `it` and `expect`.
+
 ### Small print
 
 Author: Gleb Bahmutov &copy; 2014

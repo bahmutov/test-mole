@@ -1,7 +1,7 @@
 {
   "name": "test-mole",
   "description": "Test inside javascript closures by sneaking a mole",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/test-mole/issues"
