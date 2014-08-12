@@ -79,6 +79,8 @@ so it will default its own methods to be `noop`. Your code will pay only for sou
 and compilation once. When running with the unit test environment, the `testMole.it` will
 point at `window.it` provided by BDD framework.
 
+See [Test mole](http://bahmutov.calepin.co/test-mole.html) blog post for longer discussion.
+
 ## Install
 
 Node: `npm install test-mole` then `require('test-mole')`
